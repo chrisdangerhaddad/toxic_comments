@@ -1,16 +1,15 @@
-# toxic_comments
-Prediction of Toxic Comments, Multinomial Classification
+# Prediction of Toxic Comments, Multinomial Classification
 
 
-Team Members
-	- Sanjay Roberts 
-	- Jeff Coady
-	- Chris Haddad
+	Team Members
+		- Sanjay Roberts 
+		- Jeff Coady
+		- Chris Haddad
 	
-Justification	
-	- Our problem involves NLP and predictive modeling.  Jeff Coady has a background in linguistics, 
-	- Chris Haddad has experience with predictive modeling, and Sanjay Roberts has some experience with both NLP and modeling.
-	- Further, Sanjay Roberts has experience with Kaggle competitions and the rest of the team is anxious to learn about the process of competing.
+	Justification	
+		- Our problem involves NLP and predictive modeling.  Jeff Coady has a background in linguistics, 
+		- Chris Haddad has experience with predictive modeling, and Sanjay Roberts has some experience with both NLP and modeling.
+		- Further, Sanjay Roberts has experience with Kaggle competitions and the rest of the team is anxious to learn about the process of competing.
 	
 	
 Problems/Motivation
