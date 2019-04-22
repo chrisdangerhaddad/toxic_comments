@@ -35,7 +35,7 @@
 			+ gensim
 		- Potential Packages:
 			+ elmo
-			+ bird
+			+ bert
 			+ spacy
 			+ textblob
 		
@@ -84,7 +84,14 @@
 				- ethics 
 			+ https://medium.com/@nehabhangale/toxic-comment-classification-models-comparison-and-selection-6c02add9d39f
 				- LSTM v CNN, tokenization, embedding
-			
+		+ http://nymag.com/intelligencer/2017/02/google-introduces-perspective-a-tool-for-toxic-comments.html 
+			- competition background
+		+ http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+			- LSTM literature
+		+ https://www.youtube.com/watch?v=WCUNPb-5EYI
+		+	
+		
+
 	Required work detail before build model
 		- data cleansing
 		- Tokenize and Pad
