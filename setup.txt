@@ -1,0 +1,114 @@
+https://medium.com/digitalcrafts/how-to-set-up-an-ec2-instance-with-github-node-js-and-postgresql-e363cb771826
+
+https://gist.github.com/widdowquinn/e91b9bb850ece8873bbd084944798fe2
+
+ssh -i "toxic.pem" ubuntu@ec2-107-22-132-187.compute-1.amazonaws.com
+
+chmod 400 toxic.pem
+
+# config password for ubuntu
+
+sudo vi /etc/ssh/sshd_config
+
+     PasswordAuthentication yes
+
+     If you want to set up “root” login, find  “PermitRootLogin” parameter and change its value from “prohibit-password” to “yes“
+
+sudo passwd ubuntu
+
+     your3Java678
+
+              
+# create new user
+
+sudo adduser sroberts
+
+     your10Python44
+	 
+# chaddad
+
+sudo adduser chaddad
+
+     my9Python33
+
+# jcoad
+
+sudo adduser jcoad
+
+    my9Python1
+#########
+                
+# user ssh
+
+# userdel -r sroberts
+
+sudo su sroberts
+
+mkdir .ssh
+
+chmod 700 .ssh
+
+touch .ssh/authorized_keys
+
+chmod 600 .ssh/authorized_keys
+
+nano .ssh/authorized_keys
+
+# get public key: cat ~/.ssh/authorized_keys
+AAAAB3NzaC1yc2EAAAADAQABAAABAQC70KNtKj9c0GTL1I5M4geuMuZyZIZAHee/zhqpVNxbeBbcu6IgKN/4++0B7YV2N1fcjuSRh74kggFeCp21PsNtZzIYVzgmiV83ImPQpwcrtUeYwCUy06tF1a566SgnaeenlQnb+yDVIYfOoAqWwdUm1yC5dqqpjGkzPtdQEE2ZrvMJCdjFCvBnNAKu04Fjxo0yOXoDiMtnrXcI1FtBFK2mgsADV8+0uP5m8gE+k9Z4xnP2iRetY1ZxE2x2xt9+xtn8PFsnwofEOm2+zKxAp52+in9kRDRkP4ydDoY461UzMMDL0Xh6qkAp49/+6X0IWRhySbquCNUJAE5OHhfYgxjj
+
+#### reboot ###
+
+ 
+
+
+# user sroberts ssh
+
+ssh sroberts@ec2-107-22-132-187.compute-1.amazonaws.com
+your10Python44
+
+
+# install anaconda for each user
+
+wget https://repo.anaconda.com/archive/Anaconda3-2018.12-Linux-x86_64.sh
+
+bash Anaconda3-2018.12-Linux-x86_64.sh
+
+source .bashrc
+
+#create ssh config on local machine (go to /Users/sanjayroberts1/.ssh)
+nano .ssh/config
+
+Host ec2
+    Hostname 3.92.194.218
+    User sroberts
+    IdentityFile ~/toxic.pem
+	
+	
+
+#Transfer kaggle data from local to vm
+$scp -i ~/Desktop/toxic.pem /Users/sanjayroberts1/Desktop/toxic_comments/jigsaw-unintended-bias-in-toxicity-classification/test.csv.zip sroberts@ec2-3-92-194-218.compute-1.amazonaws.com:/home/sroberts/
+
+scp -i ~/Desktop/toxic.pem /Users/sanjayroberts1/Desktop/toxic_comments/jigsaw-unintended-bias-in-toxicity-classification/train.csv.zip sroberts@ec2-3-92-194-218.compute-1.amazonaws.com:/home/sroberts/
+
+#git clone repo
+
+#Create environment on AWS
+conda create --name toxic python=3.7
+conda activate toxic
+pip install ipykernel
+pip install -r requirements.txt
+python -m ipykernel install --user --name=toxic
+
+
+#run tmux in background when launching a model to ensure model runs even if losing connection/closing laptop
+
+#access jupyter notebooks 
+
+run `jupyter notebook --no-browser` in ec2
+make sure port 9999 is open/not binded
+run `ssh -NfL 9999:localhost:8888 ec2` locally
+copy/paste link from ec2 to local browser
+
+
+	
