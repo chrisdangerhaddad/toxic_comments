@@ -2,3 +2,4 @@ pandas
 ipython-autotime
 nltk
 sklearn
+matplotlib
