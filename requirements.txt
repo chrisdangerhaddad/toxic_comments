@@ -3,3 +3,4 @@ ipython-autotime
 nltk
 sklearn
 matplotlib
+imblearn
