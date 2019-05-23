@@ -4,3 +4,7 @@ nltk
 sklearn
 matplotlib
 imblearn
+wordcloud
+seaborn
+gensim
+pyLDAvis
