@@ -1,5 +1,7 @@
 # Prediction of Toxic Comments, Multinomial Classification
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdangerhaddad/toxic_comments/master)
+
 
 	Team Members
 		- Sanjay Roberts 
@@ -7,7 +9,6 @@
 		- Chris Haddad
 	
 	Project Submission:
-	[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdangerhaddad/toxic_comments/master)
 		- EDA.ipynb
 		- model.ipynb
 		- Presentation.ipynb
