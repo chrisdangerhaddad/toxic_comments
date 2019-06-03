@@ -6,6 +6,11 @@
 		- Jeff Coady
 		- Chris Haddad
 	
+	Project Submission:
+		- EDA.ipynb
+		- model.ipynb
+		- Presentation.ipynb
+	
 	Justification	
 		- Our problem involves NLP and predictive modeling.  Jeff Coady has a background in linguistics, 
 		- Chris Haddad has experience with predictive modeling, and Sanjay Roberts has some experience with both NLP and modeling.
