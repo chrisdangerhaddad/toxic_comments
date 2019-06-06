@@ -11,6 +11,7 @@
 	Project Submission:
 		- EDA.ipynb
 		- model.ipynb
+		- toxic_cnn.ipynb
 		- Presentation.ipynb
 	
 	Justification	
